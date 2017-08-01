@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+/*引入font-awesome文件*/
+@import url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.vtitlee{
+	width:1000px;
+	height:38px;
+	background-color: #c3b7b5;
+	margin:0 auto;
+	font-size: 20px;
+	font-family: STXingkai;
+	margin-top: 0px;
+}
+
+.vtitle{
+	width:1000px;
+	height:38px;
+	background-color: #c3b7b5;
+	margin:0 auto;
+	font-size: 20px;
+	font-family: STXingkai;
+	margin-top: 23px;
+}
+
+p{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.vdo{
+	width:1000px;
+	background-color: #d9ccca;
+	margin:0 auto;
+	margin-top: 3px;
+}
+
+.uploader-demo{
+	float: left;
+}
+
+.none{
+	clear: both;
+}
+
+#filePicker{
+	margin-left: 455px;
+	padding-top: 5px;
+}
+
+#btn{
+	margin-left: 457px;
+	margin-top: 5px;
+}
+
+#btnn{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+img{
+	padding-right: 10px;
+}
+
+#upInfo{
+	left: 180px;
+}
+
+.font{
+	margin-left: 466px;
+}
+
+a{
+	position:relative;
+	bottom:17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color:black;
+	font-weight: bold;
+}/*解决导航条用户和登出的css*/
+
+
+.content_bored p{
+	font-family:STXingkai;
+}
+
+.content_bored a{
+	font-family:STXingkai;
+}
+
+.navbar-brand{
+	font-family:STXingkai;
+}
+
+button{
+	font-family:STXingkai;
+}
+
+a{
+	font-family:STXingkai;
+}
+
+.cc{
+	margin-top: 10px;
+}
+
+.all{
+	margin-left: 535px;
+}
+
+#tie{
+	margin-left: 505px;
+}

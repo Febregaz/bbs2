@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+@import
+	url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+	;
+
+@import
+	url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css')
+	;
+/*引入font-awesome文件*/
+@import
+	url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
+	;
+	
+
+.boardtable{
+	margin-top: 70px;
+}
+
+th{
+	color: white;
+}
+
+.nb{
+	margin-top: 50px;
+	margin-left: 250px;
+}
+	
+.nbb{
+	margin-top:-33px;
+	margin-left: 350px;
+}

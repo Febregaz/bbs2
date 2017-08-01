@@ -1,0 +1,109 @@
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+/*引入font-awesome文件*/
+@import url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.text_show {
+	width: 1000px;
+	background: #c7bdbb;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.image_show {
+	width: 1000px;
+	height: 500px;
+	background: #c7bdbb;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.video_show{
+	width: 1000px;
+	background: #c7bdbb;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.yanchang{
+	clear: both;
+}
+
+.video_position{
+	width:830px;
+	margin-left: 85px;
+	padding-top: 30px;
+	margin-bottom:70px;
+}
+
+.comment{
+	border:1px solid white;
+	margin:0 auto;
+	padding:50px;
+}
+
+.none{
+	clear: both;
+}
+
+.text_show p{
+	font-family:STXingkai;
+	font-size:20px;
+	color: black;
+}
+
+.mygallery{
+	padding-top: 30px;
+}
+
+.navbar-brand{
+	font-family:STXingkai;
+}
+
+button{
+	font-family:STXingkai;
+}
+
+a{
+	font-family:STXingkai;
+}
+
+span{
+	font-family:STXingkai;
+}
+
+/**/
+nav的css
+/**/
+.navbar-brand{
+	position: relative;
+	top:1px;
+}
+
+.nav{
+	max-height: 1px;
+}
+
+.llii{
+	position:relative;
+	margin-top: -45px;
+	font-size: 17px;
+}
+
+.ping{
+	padding-left:100px;
+	padding-right:100px;
+	margin:0 auto;
+}
+
+.comfather{
+	border:1px solid white;
+	padding:15px;
+	margin:10px;
+}
+
+.sonc{
+	width:600px;
+	height:200px;
+	background-color: red;
+}

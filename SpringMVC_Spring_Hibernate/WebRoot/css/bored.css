@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+/*引入font-awesome文件*/
+@import url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body{
+	padding:10px;
+	padding-left: 350px;
+	padding-right: 350px;
+	background-color: #151414;
+}
+
+.head_bored{
+	margin-top:10px;
+	background-color:#c3b7b5;
+	height:40px;
+	width:100%;
+}
+
+.pulldown{
+	float:right;
+	font-size:17px;
+	position:relative;
+	margin-top:5px;
+	margin-right:10px;
+}
+.title{
+	position:relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p{
+	font-family:STXingkai;
+	position:relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+}
+
+.block_bored{
+	background-color:white;
+	margin-top:5px;
+	border:1px solid #cecaca;
+	width:100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored{
+	width:33.3%;
+	height:120px;
+	background-color: #c5bcbb;
+	float: left;
+	padding: 10px;
+	border:1px solid #fff;
+}
+
+.content_bored p{
+	font-family:STXingkai;
+}
+
+.content_bored a{
+	font-family:STXingkai;
+}
+
+.navbar-brand{
+	font-family:STXingkai;
+}
+
+button{
+	font-family:STXingkai;
+}
+
+a{
+	font-family:STXingkai;
+}
+
+img{
+	width: 60px;
+	height: 60px;
+}
+
+a{
+	position:relative;
+	bottom:17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color:black;
+	font-weight: bold;
+}
+
+.content_bored p{
+	position:relative;
+	margin-left: 83px;
+	bottom:22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear{
+	clear:both;
+}

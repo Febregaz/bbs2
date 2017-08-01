@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+/*引入font-awesome文件*/
+@import url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+
+.editboard{
+	width:600px;
+	background-color: #c7bdbb;
+	margin:0 auto;
+	margin-top: 70px;
+}
+
+.clear{
+	clear:both;
+}
+
+.a{
+	margin-left:5px;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius:7px;
+	width:230px;
+}
+.b{
+	left: 100px;
+}
+
+.aa{
+	margin-left:22px;
+}
+
+.ab{
+	margin-left:9px;
+}
+.son{
+	margin-left:140px;
+}
+
+.sb{
+	margin-left: 270px;
+}

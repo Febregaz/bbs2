@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+body{
+	width:800px;
+	height:600px;
+	background: white;
+	margin: 0 auto;
+}
+
+.body{
+	width:800px;
+	height:600px;
+	background: #c3b7b5;
+	margin: 0 auto;
+}
+
+.pp{
+	margin-left:340px;
+	padding-top: 300px;
+	font-size: 25px;
+	font-family:STXingkai;
+}

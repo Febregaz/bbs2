@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css');
+/*引入font-awesome文件*/
+@import url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body{
+	padding:10px;
+	padding-left: 350px;
+	padding-right: 350px;
+	background-color: #151414;
+}
+
+.post_land{
+	position:relative;
+	width:600px;
+	background: #c7bdbb;
+	margin: 0 auto;
+	margin-top:80px;
+	border:1px solid black;
+}
+
+.none{
+	float:left;
+	clear: both;
+}
+
+.post_title{
+	font-size: 20px;
+	padding-left:100px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	border:1px solid black;
+}
+
+a{
+	color: black;
+}
+
+.navbar-brand{
+	font-family:STXingkai;
+}
+
+button{
+	font-family:STXingkai;
+}
+
+a{
+	font-family:STXingkai;
+}
+
+/**/
+nav的css
+/**/
+.navbar-brand{
+	position: relative;
+	top:1px;
+}
+
+.nav{
+	max-height: 1px;
+}
+
+.llii{
+	position:relative;
+	margin-top: -45px;
+	font-size: 17px;
+}

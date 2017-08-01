@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+@import
+	url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
+	;
+
+
+.item {
+	position: relative;
+}
+
+.carousel-inner {
+	overflow: auto;
+}
+
+.item>img {
+	width: 1500px;
+	max-height: 650px;
+	margin-bottom: 10px;	
+}
