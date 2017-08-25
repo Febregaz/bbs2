@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -12,7 +12,12 @@
 <head>
 <base href="<%=basePath%>">
 
-<title>主题界面</title>
+<%
+	String topic_title=request.getParameter("topic_title");
+	String title= java.net.URLDecoder.decode(topic_title, "UTF-8");
+ %>
+
+<title><%=title %></title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -37,12 +42,19 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/main.css">
 
+<script type="text/javascript">
+	Handlebars.registerHelper("ma", function(v1) {
+		var a=encodeURI(encodeURI(v1));
+		return a;
+	});
+</script>
+
 <script id="commentTmpl" type="text/x-handlebars-template">
 	
 		<div class="post_land">
 			{{#each post}}
 				<div class="post_title">
-					<a href="{{post_url}}?post_id={{vn_id}}">{{post_title}}</a>
+					<a href="{{post_url}}?post_id={{vn_id}}&post_title={{#ma post_title}}{{/ma}}">{{post_title}}</a>
 				</div>
 			{{/each}}
 			<div class="none"></div>
@@ -52,17 +64,14 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		var vnpost = vnpost_getall();
-		console.log(vnpost);
 		var master = {
 			post : vnpost
 		};
-		console.log(master);
 		var template = $("#commentTmpl").template(master).appendTo("body");
 	});
 
 	function vnpost_getall() {
 		var a = getUrlParam("topic_id");
-		console.log("topic的id:" + a);
 		var params = {};
 		params.topic_id = a;
 		var result;
@@ -73,7 +82,6 @@
 			data : params,
 			dataType : "json",
 			success : function(data, status) {
-				console.log(data);
 				result = data; /*要改:传入topic的id，分清隶属于哪一个topic*/
 			}
 		});
@@ -100,13 +108,7 @@
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -119,7 +121,7 @@
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="javascript:void(0);" onclick="b()"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -147,5 +149,13 @@
 		</div>
 		<div class="none"></div>
 	</div> -->
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		function b(){
+			alert("注册暂停...");
+		}
+	</script>
 </body>
 </html>

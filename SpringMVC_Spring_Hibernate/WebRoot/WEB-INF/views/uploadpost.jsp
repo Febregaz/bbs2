@@ -58,13 +58,7 @@ body {
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -76,7 +70,7 @@ body {
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -414,6 +408,15 @@ body {
 				}
 			});
 		}
+	</script>
+	
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		$(".regist").click(function(){
+			alert("好东西正在路上...");
+		});
 	</script>
 
 </body>

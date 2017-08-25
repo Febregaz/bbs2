@@ -1,11 +1,10 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@page import="com.jxust.svsh.entity.User" %>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@page import="com.jxust.svsh.entity.User"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	
 %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -21,6 +20,7 @@
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
+<meta name="baidu-site-verification" content="ebAx8gG0A0" />
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -48,7 +48,7 @@
 	href="${pageContext.request.contextPath}/css/main.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/sinaFaceAndEffec.css">
-	
+
 
 <script type="text/javascript">
 	Handlebars.registerHelper("compare", function(v1, v2, options) {
@@ -74,6 +74,13 @@
 	});
 </script>
 
+<script type="text/javascript">
+	Handlebars.registerHelper("ma", function(v1) {
+		var a=encodeURI(encodeURI(v1));
+		return a;
+	});
+</script>
+
 <script id="commentTmpl" type="text/x-handlebars-template">
 	{{#each board}}
 		<c:choose>
@@ -94,7 +101,7 @@
 					{{#each ../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -122,7 +129,7 @@
 					{{#each ../../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -154,7 +161,7 @@
 					{{#each ../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -175,19 +182,24 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		var topic_d = topic_getall();
-		console.log(topic_d);
 		var board_d = board_getall();
-		console.log(board_d);
 		var user_d = user_getall();
-		console.log(user_d);
 		var master = {
 			board : board_d,
 			topic : topic_d,
 			user : user_d
 		};
-		console.log("d:" + master);
 		var template = $("#commentTmpl").template(master).appendTo("body");
 		//var template = $("#commentTmpl").template(topic_d).appendTo(".block_bored");
+		
+		$(".haodongxi").click(function(){
+			alert("好东西正在完善中...");
+			window.open ('http://sites.simbla.com/8f9cec59-5aef-95ab-01dd-3282b6d062da/Home');
+		});
+		
+		$(".regist").click(function(){
+			alert("注册暂停...");
+		});
 
 	});
 	function board_getall() {
@@ -208,7 +220,6 @@
 				//				var d = {
 				//					board : data
 				//				};
-				console.log(data);
 				result = data;
 			}
 		});
@@ -226,7 +237,6 @@
 				//				var d = {
 				//					topic : data
 				//				};
-				console.log(data);
 				result = data;
 			}
 		});
@@ -241,7 +251,6 @@
 			url : "user/getalluser",
 			dataType : "json",
 			success : function(data, status) {
-				console.log(data);
 				result = data;
 			}
 		});
@@ -258,13 +267,13 @@
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
+			<form class="navbar-form navbar-left" role="search" action="vnpost/sou" method="post">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
+					<input type="text" name="sousuo" class="form-control" placeholder="Search">
 				</div>
 				<button type="submit" class="btn btn-default">搜索</button>
 			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -277,7 +286,7 @@
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -300,16 +309,16 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="image/jinx1.jpg" alt="">
-				<div class="carousel-caption"></div>
+				<img src="image/explicit innocence2.png" alt="">
+				<div class="carousel-caption">KBS--explicit innocence</div>
 			</div>
 			<div class="item">
-				<img src="image/hand in hand.jpg" alt="">
-				<div class="carousel-caption"></div>
+				<img src="image/1708091.png" alt="">
+				<div class="carousel-caption">python爬虫初涉</div>
 			</div>
 			<div class="item">
-				<img src="image/vn2.jpg" alt="">
-				<div class="carousel-caption"></div>
+				<img src="image/yumingbangding.png" alt="">
+				<div class="carousel-caption">域名的解析和服务器绑定</div>
 			</div>
 		</div>
 
@@ -323,6 +332,9 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+	<audio class="playmusic" controls="controls" autoplay="autoplay"> 
+		<source src="myimage/Rainyseason.mp3" type="audio/mpeg" /> Your browser does not support the audio element.
+	</audio>
 
 </body>
 </html>

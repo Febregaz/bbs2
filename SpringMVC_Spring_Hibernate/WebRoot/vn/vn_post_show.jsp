@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -6,7 +6,11 @@
 			+ path + "/";
 %>
 <%
-	String connect_id = request.getParameter("connect_id");   
+	String connect_id = request.getParameter("connect_id");
+	/*String post_title = request.getParameter("post_title");
+	post_title=new String(post_title.getBytes("8859_1"),"UTF-8");*/
+	String post_title=request.getParameter("post_title");
+	String title= java.net.URLDecoder.decode(post_title, "UTF-8");   
 
 %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -15,7 +19,7 @@
 <head>
 <base href="<%=basePath%>">
 
-<title>帖子界面</title>
+<title><%=title %></title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -26,6 +30,25 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+
+
+<!-- Dplayer -->
+<link rel="stylesheet" href="https://unpkg.com/github-markdown-css">
+<link rel="stylesheet" href="css/DPlayer.min.css">
+<script src="js/DPlayer.js"></script>
+<script src="js/DPlayer.min.js"></script>
+<script src="https://unpkg.com/flv.js/dist/flv.min.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/modernizr.js"></script>
+<!-- Dplayer -->
+
+
+<!-- ckplayer -->
+<script type="text/javascript" src="ckplayer/ckplayer.js"
+	charset="utf-8"></script>
+<!-- ckplayer -->
+
+
 <link rel="stylesheet"
 	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet"
@@ -65,13 +88,7 @@
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -84,7 +101,7 @@
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="javascript:void(0);" onclick="b()"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -127,9 +144,9 @@
 
 		<div class="video_show">
 			{{#each video}}
-			<video class="video_position"
-				src="<%=basePath%>upload/{{video_url}}"
-				controls="controls" width="620px" length="425px"></video>
+				<div class="video_position" style="width:800px;height:500px;margin:0 auto;margin-top:80px;">
+					<div id="a1"  tt="<%=basePath%>upload/{{video_url}}"></div>			
+				</div>
 			{{/each}}
 
 	<div class="media ping">
@@ -237,19 +254,30 @@
 				.ready(
 						function() {
 							var text_d = text_getall();
-							console.log("最终text:" + text_d);
 							var image_d = image_getall();
-							console.log("最终image:" + image_d);
 							var video_d = video_getall();
-							console.log("最终video:" + video_d);
 							var master = {
 								text : text_d,
 								image : image_d,
 								video : video_d
 							};
-							console.log(master);
 							var template = $("#commentTmpl").template(master)
 									.appendTo("body");
+
+							var url=$('#a1').attr("tt");
+							var flashvars = {
+								f : ''+url+'',
+								c : 0
+							};
+							var params = {
+								bgcolor : '#FFF',
+								allowFullScreen : true,
+								allowScriptAccess : 'always',
+								wmode : 'transparent'
+							};
+							CKobject.embedSWF('ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '800',
+							'500', flashvars, params);
+
 
 							var tn1 = $('.mygallery').tn3({
 								skinDir : "skins",
@@ -308,16 +336,13 @@
 							}
 
 							var comment_d = comment_get();
-							console.log("comment:" + comment_d);
 							var comment_son_d = comment_son_get();
 							var masterr = {
 								comment : comment_d,
 								comment_son : comment_son_d
 							};
-							console.log("comment的boss:" + masterr);
 							var template = $("#comm").template(masterr)
-									.appendTo(".comment");
-
+									.appendTo(".comment"); 
 							$(".butt").click(function() {
 								var a = $('#area').val();
 								var b = getUrlParam("post_id");
@@ -331,7 +356,7 @@
 									data : params,
 									dataType : "json",
 									success : function(data, status) {
-										console.log("text返回的:" + data);
+										
 										result = data;
 									}
 								});
@@ -360,9 +385,7 @@
 																error : function(
 																		data,
 																		status) {
-																	window.location.href = "vn/vn_post_show.jsp?post_id="
-																			+ b
-																			+ "";
+												location.reload([true]);
 																}
 															});
 												}
@@ -398,7 +421,7 @@
 
 							function text_getall() {
 								var a = getUrlParam("post_id");
-								console.log("text的 a:" + a);
+
 								var params = {};
 								params.post_id = a;
 								var result;
@@ -409,7 +432,7 @@
 									data : params,
 									dataType : "json",
 									success : function(data, status) {
-										console.log("text返回的:" + data);
+										
 										result = data;
 									}
 								});
@@ -418,7 +441,7 @@
 
 							function image_getall() {
 								var a = getUrlParam("post_id");
-								console.log("image的a:" + a);
+
 								var params = {};
 								params.post_id = a;
 								var result;
@@ -429,7 +452,7 @@
 									data : params,
 									dataType : "json",
 									success : function(data, status) {
-										console.log("image返回的:" + data);
+										
 										result = data;
 									}
 								});
@@ -438,7 +461,7 @@
 
 							function video_getall() {
 								var a = getUrlParam("post_id");
-								console.log("video的a:" + a);
+
 								var params = {};
 								params.post_id = a;
 								var result;
@@ -449,7 +472,7 @@
 									data : params,
 									dataType : "json",
 									success : function(data, status) {
-										console.log("video返回的:" + data);
+										
 										result = data;
 									}
 								});
@@ -467,6 +490,15 @@
 							}
 
 						});
+	</script>
+
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		function b(){
+			alert("注册暂停...");
+		}
 	</script>
 
 </body>

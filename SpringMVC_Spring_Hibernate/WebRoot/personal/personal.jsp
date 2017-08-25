@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -108,18 +108,22 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		var user_d = user_getall();
-		console.log(user_d);
 		var master = {
 			user : user_d,
 		};
-		console.log(master);
 		var template = $("#commentTmpl").template(master).appendTo("body");
 		//var template = $("#commentTmpl").template(topic_d).appendTo(".block_bored");
+		
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		$(".regist").click(function(){
+			alert("好东西正在路上...");
+		});
 
 	});
 	function user_getall() {
 		var a = getUrlParam("user_id");
-		console.log("user_id是:" + a);
 		var params = {};
 		params.user_id = a;
 		var result;
@@ -140,7 +144,6 @@
 				//				var d = {
 				//					board : data
 				//				};
-				console.log(data);
 				result = data;
 			}
 		});
@@ -164,13 +167,7 @@
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -182,7 +179,7 @@
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span

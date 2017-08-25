@@ -123,5 +123,11 @@
 			aria-valuemax="100" style="width: 0%" id="progress-1"
 			class="progress-bar"></div>
 	</div>
+	
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+	</script>
 </body>
 </html>

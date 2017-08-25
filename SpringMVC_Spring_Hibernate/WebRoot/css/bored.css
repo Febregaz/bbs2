@@ -104,3 +104,40 @@ a{
 .clear{
 	clear:both;
 }
+
+.playmusic{
+	display: none;
+}
+
+.carousel-inner > .item > img{
+      width: 80%;
+      margin: auto;
+}
+
+.carousel-inner > .item {
+    height: 350px;
+}
+
+.carousel-inner .item img {
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption {  
+    background-color:#060505;
+    opacity:0.8;
+    z-index:1;
+    padding:1px;
+}
+
+.carousel-caption h4
+{
+	color:#c5bcbb;
+	font-family:STXingkai;
+}
+
+.carousel-indicators li
+{
+    display:none;
+}

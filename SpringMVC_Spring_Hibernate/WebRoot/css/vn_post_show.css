@@ -22,7 +22,7 @@
 	width: 1000px;
 	background: #c7bdbb;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top:-70px;
 }
 
 .yanchang{
@@ -32,7 +32,7 @@
 .video_position{
 	width:830px;
 	margin-left: 85px;
-	padding-top: 30px;
+	padding-top: -70px;
 	margin-bottom:70px;
 }
 
@@ -40,6 +40,7 @@
 	border:1px solid white;
 	margin:0 auto;
 	padding:50px;
+	top:30px;
 }
 
 .none{
@@ -47,7 +48,7 @@
 }
 
 .text_show p{
-	font-family:STXingkai;
+	font-family:SimHei;
 	font-size:20px;
 	color: black;
 }
@@ -94,6 +95,7 @@ navµÄcss
 	padding-left:100px;
 	padding-right:100px;
 	margin:0 auto;
+	margin-top:40px;
 }
 
 .comfather{
@@ -106,4 +108,8 @@ navµÄcss
 	width:600px;
 	height:200px;
 	background-color: red;
+}
+
+p{
+  text-indent:50px;
 }

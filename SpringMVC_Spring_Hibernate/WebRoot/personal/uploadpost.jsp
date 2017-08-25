@@ -62,25 +62,20 @@ body {
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
 			<c:choose>
 				<c:when test="${sessionScope.user_name!=null}">
-					<li><a class="llii" href="personal/personal.jsp?user_id=${sessionScope.user_name.user_id}"><span
+					<li><a class="llii"
+						href="personal/personal.jsp?user_id=${sessionScope.user_name.user_id}"><span
 							class="glyphicon glyphicon-home"></span>${sessionScope.user_name.user_name}</a></li>
 					<li><a class="llii" href="user/logout"><span
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -227,7 +222,7 @@ body {
 					uploader.upload(); //执行手动提交
 					layer.closeAll();
 					console.log("上传成功");
-					
+
 				});
 
 			});
@@ -373,6 +368,20 @@ body {
 		<input type="text" placeholder="请输入帖子名称" id="tie" />
 		<br>
 		<br>
+  		<div class="radio">
+      		<label>
+        		<input type="radio" name="optionsRadios" id="optionsRadios1" value="1" checked>
+        		私密
+      		</label>
+ 		</div>
+ 		<div class="radio">
+      		<label>
+        		<input type="radio" name="optionsRadios" id="optionsRadios2" value="0">
+        		公开 
+      		</label>
+ 		</div>
+		<br>
+		<br>
 		<br>
 		<button onclick="go()" class="all btn btn-danger">Submit All</button>
 	</div>
@@ -458,11 +467,14 @@ body {
 			console.log("ID:" + user);
 			var title = $('#tie').val();
 			console.log("贴子:" + title);
+			var pri=$("input[name='optionsRadios']:checked").val();
+			console.log("私密:"+pri);
 			var params = {};
 			params.board_id = a;
 			params.topic_id = b;
 			params.user_id = user;
 			params.text = title;
+			params.privacy=pri;
 			$.ajax({
 				type : "POST",
 				async : false,
@@ -476,6 +488,15 @@ body {
 				}
 			});
 		}
+	</script>
+
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		$(".regist").click(function(){
+			alert("好东西正在路上...");
+		});
 	</script>
 
 </body>

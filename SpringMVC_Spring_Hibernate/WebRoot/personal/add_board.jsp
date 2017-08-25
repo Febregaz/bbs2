@@ -120,26 +120,35 @@
 											var desc = $(this).parent()
 													.parent().children("td")
 													.get(2).innerHTML;
+											var descc=encodeURI(encodeURI(desc));
 											var name = $(this).parent()
 													.parent().children("td")
 													.get(3).innerHTML;
+											var namee=encodeURI(encodeURI(name));
 											var dearjhon = $(this).parent()
 													.parent().children("td")
 													.get(4).innerHTML;
 											var num = $(this).parent().parent()
 													.children("td").get(5).innerHTML;
+											var privacy = $(this).parent()
+													.parent().children("td")
+													.get(6).innerHTML;
 											var pan = $(this).parent().index();
-											if (pan == 6) {
+											if (pan == 7) {
 												window.location.href = 'personal/add_board_edit.jsp?bid='
 														+ id
 														+ '&bdesc='
-														+ desc
+														+ descc
 														+ '&bname='
-														+ name
+														+ namee
 														+ '&dear='
 														+ dearjhon
-														+ '&bnum=' + num + '';
-											} else if(pan==7) {
+														+ '&bnum='
+														+ num
+														+ '&pri='
+														+ privacy
+														+ '';
+											} else if (pan == 8) {
 												var r = confirm("确定要删除Board"
 														+ " " + id + "的板块吗？");
 												if (r == true) {
@@ -159,11 +168,11 @@
 																}
 															});
 												} else {
-													
+
 												}
-											}
-											else{
-												window.location.href = 'personal/add_topic_edit.jsp?bid='+id+'';
+											} else {
+												window.location.href = 'personal/add_topic_edit.jsp?bid='
+														+ id + '';
 											}
 										});
 
@@ -206,12 +215,13 @@
 	}
 
 	function nbb() {
-		layer.open({
-			type : 1,
-			area : [ '600px', '360px' ],
-			shadeClose : true, //点击遮罩关闭
-			content : '\<\div style="padding:20px;">此功能为管理员特有，dearjhon的规律如下，dearjhon,dearjhon1,dearjhon2,dearjhon3,dearjhon4...以此类推.另外，主键空留问题我还没有解决...\<\/div>'
-		});
+		layer
+				.open({
+					type : 1,
+					area : [ '600px', '360px' ],
+					shadeClose : true, //点击遮罩关闭
+					content : '\<\div style="padding:20px;">此功能为管理员特有，dearjhon的规律如下，dearjhon,dearjhon1,dearjhon2,dearjhon3,dearjhon4...以此类推.另外，主键空留问题我还没有解决...\<\/div>'
+				});
 	}
 </script>
 
@@ -222,13 +232,7 @@
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
 		<div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">搜索</button>
-			</form>
-			<button type="button" class="btn btn-default navbar-btn">
+			<button type="button" class="btn btn-default navbar-btn haodongxi">
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
@@ -241,7 +245,7 @@
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii" href="#"><span
+					<li><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
 					<li><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
@@ -255,6 +259,15 @@
 	<script>
 		$(function() {
 			$("[data-toggle='tooltip']").tooltip();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(".haodongxi").click(function() {
+			alert("好东西正在路上...");
+		});
+		$(".regist").click(function(){
+			alert("好东西正在路上...");
 		});
 	</script>
 
