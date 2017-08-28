@@ -354,7 +354,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<p class="dplay">陈列馆</p>
+	<p class="play">陈列馆</p>
 	<audio class="playmusic" controls="controls" autoplay="autoplay"> 
 		<source src="myimage/Rainyseason.mp3" type="audio/mpeg" /> Your browser does not support the audio element.
 	</audio>
