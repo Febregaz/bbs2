@@ -188,17 +188,16 @@
 	<div class="blockk1"><a href="https://git-scm.com/book/zh/v2"><img src="image/git.jpg" class="deep" /><p class="zi" style="margin-left:80px;">GIT-BOOK</p></a></div>
 	<p class="dddplay">与我联系</p>
 	<div class="QQ">
-		<div id="circle" class="c1"><span class="fa fa-qq fa-3x" style="margin-top:10px;margin-left:15px;"></span>
+		<div id="circle" class="c1"><span class="fa fa-qq fa-3x" style="margin-top:10px;margin-left:15px;"></span></div>
 		<p class="qzi">1844927304</p>
 	</div>
 	<div class="Tel">
-		<div id="circle" class="c2"><span class="fa fa-phone fa-3x" style="margin-top:10px;margin-left:18px;"></span>
+		<div id="circle" class="c2"><span class="fa fa-phone fa-3x" style="margin-top:10px;margin-left:18px;"></span></div>
 		<p class="tzi">18818429769</p>
 	</div>
 	<div class="Email">
-		<div id="circle" class="c3"><span class="fa fa-google fa-3x" style="margin-top:10px;margin-left:18px;"></span>
+		<div id="circle" class="c3"><span class="fa fa-google fa-3x" style="margin-top:10px;margin-left:18px;"></span></div>
 		<p class="ezi">febregazz@gmail.com</p>
-	</div>
 	</div>
 </script>
 

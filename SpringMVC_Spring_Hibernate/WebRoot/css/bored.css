@@ -153,9 +153,10 @@ a {
 }
 
 .dplay {
+	position:relative;
 	font-size: 35px;
 	color: white;
-	margin-left: 550px;
+	margin-left: 45%;
 	margin-top: 40px;
 	font-weight: bold;
 }
@@ -168,52 +169,28 @@ a {
 .intro {
 	position:relative;
 	margin-top: -300px;
-	margin-left: 193px;
+	margin-left: 18%;
 }
 
 .intro1 {
 	position:relative;
 	margin-top: -68px;
-	margin-left: 440px;
+	margin-left: 38%;
 }
 
 .intro2 {
 	position:relative;
 	margin-top: -68px;
-	margin-left: 680px;
+	margin-left: 58%;
 }
 
 .intro3 {
 	position:relative;
 	margin-top: -68px;
-	margin-left: 930px;
+	margin-left: 78%;
 }
 
 #circle {
-	width: 70px;
-	height: 70px;
-	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-}
-#circle1 {
-	width: 70px;
-	height: 70px;
-	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-}
-#circle2 {
-	width: 70px;
-	height: 70px;
-	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-}
-#circle3 {
 	width: 70px;
 	height: 70px;
 	background: white;
@@ -244,7 +221,7 @@ a {
 	font-weight: bold;
 	position:relative;
 	margin-top:250px;
-	margin-left: 504px;
+	margin-left: 40%;
 }
 
 .deep{
@@ -253,16 +230,19 @@ a {
 }
 
 .blockk{
+	position:relative;
 	width:270px;
 	height:320px;
 	margin-top:50px;
+	margin-left:10%;
 }
 
 .blockk1{
+	position:relative;
 	width:270px;
 	height:320px;
 	margin-top:-320px;
-	margin-left:460px;
+	margin-left:40%;
 }
 
 .ablock{
@@ -277,31 +257,28 @@ a {
 	font-weight: bold;
 	position:relative;
 	margin-top:90px;
-	margin-left: 574px;
+	margin-left: 48%;
 }
 
 .QQ{
 	position:relative;
 	width:200px;
 	height:200px;
-	float: left;
-	margin-left: 105px;
+	margin-left: 9%;
 }
 .Tel{
 	position: relative;
 	width:200px;
 	height:200px;
-	float: left;
-	margin-left: 440px;
-	margin-top:-98px;
+	margin-left: 46%;
+	margin-top:-228px;
 }
 .Email{
 	position: relative;
 	width:200px;
 	height:200px;
-	float: left;
-	margin-left: 440px;
-	margin-top:-98px;
+	margin-left: 85%;
+	margin-top:-228px;
 }
 
 .c1{
@@ -325,7 +302,7 @@ a {
 	font-weight: bold;
 	font-size: 25px;
 	margin-top:30px;
-	margin-left:-35px;
+	margin-left:12%;
 }
 
 .ezi{
@@ -334,7 +311,7 @@ a {
 	font-weight: bold;
 	font-size: 25px;
 	margin-top:30px;
-	margin-left:-85px;
+
 }
 
 .tzi{
@@ -343,5 +320,5 @@ a {
 	font-weight: bold;
 	font-size: 25px;
 	margin-top:30px;
-	margin-left:-35px;
+	margin-left:12%;
 }
