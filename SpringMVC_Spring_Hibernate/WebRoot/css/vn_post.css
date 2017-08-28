@@ -14,10 +14,10 @@ body{
 .post_land{
 	position:relative;
 	width:600px;
-	background: #c7bdbb;
+	background: black;
 	margin: 0 auto;
 	margin-top:80px;
-	border:1px solid black;
+	border:1px solid white;
 }
 
 .none{
@@ -30,11 +30,11 @@ body{
 	padding-left:100px;
 	margin-top:10px;
 	margin-bottom: 10px;
-	border:1px solid black;
+	border:1px solid #c0c0c0;
 }
 
 a{
-	color: black;
+	color: white;
 }
 
 .navbar-brand{
