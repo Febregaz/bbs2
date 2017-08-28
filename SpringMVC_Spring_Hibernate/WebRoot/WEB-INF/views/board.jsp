@@ -101,7 +101,7 @@
 					{{#each ../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" class="img-circle" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -129,7 +129,7 @@
 					{{#each ../../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" class="img-circle" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -161,7 +161,7 @@
 					{{#each ../../topic}}
 						{{#compare b_id ../../board_id}}
 							<div class="content_bored">
-								<img alt="" src="myimage/{{image_url}}" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
+								<img alt="" src="myimage/{{image_url}}" class="img-circle" /> <a href="{{topic_post_url}}&topic_title={{#ma topic_title}}{{/ma}}">{{topic_title}}</a>
 								<p>主题:{{topic_son_num}}</p>
 							</div>
 						{{else}}
@@ -177,6 +177,29 @@
 		</c:otherwise>
 		</c:choose>
 	{{/each}}
+	<p class="dplay">617博物馆？</p>
+	<img src="image/hand in hand.jpg" class="introduce" />
+	<div id="circle" class="intro"><span class="fa fa-bug fa-3x" style="margin-top:10px;margin-left:15px;"></span><div class="font-intro"><p class="zi">程序员难免会遇到bug，bug不可怕，可怕的是懒。</p></div></div>
+	<div id="circle" class="intro1"><span class="fa fa-bomb fa-3x" style="margin-top:10px;margin-left:15px;"></span><div class="font-intro"><p class="zi">记录自己的猛然醒悟</p></div></div>
+	<div id="circle" class="intro2"><span class="fa fa-comment-o fa-3x" style="margin-top:10px;margin-left:15px;"></span><div class="font-intro"><p class="zi">人与人之间可以深刻交流</p></div></div>
+	<div id="circle" class="intro3"><span class="fa fa-eye fa-3x" style="margin-top:10px;margin-left:15px;"></span><div class="font-intro"><p class="zi">视频才是王道，看字太累</p></div></div>
+	<p class="ddplay">对我影响深刻的。。。</p>
+	<div class="blockk"><a href="http://www.360doc.com/showweb/0/0/682833719.aspx"><img src="image/english.jpg" class="deep" /><p class="zi">不懂英语，造就13亿人的信息孤岛</p></a></div>
+	<div class="blockk1"><a href="https://git-scm.com/book/zh/v2"><img src="image/git.jpg" class="deep" /><p class="zi" style="margin-left:80px;">GIT-BOOK</p></a></div>
+	<p class="dddplay">与我联系</p>
+	<div class="QQ">
+		<div id="circle" class="c1"><span class="fa fa-qq fa-3x" style="margin-top:10px;margin-left:15px;"></span>
+		<p class="qzi">1844927304</p>
+	</div>
+	<div class="Tel">
+		<div id="circle" class="c2"><span class="fa fa-phone fa-3x" style="margin-top:10px;margin-left:18px;"></span>
+		<p class="tzi">18818429769</p>
+	</div>
+	<div class="Email">
+		<div id="circle" class="c3"><span class="fa fa-google fa-3x" style="margin-top:10px;margin-left:18px;"></span>
+		<p class="ezi">febregazz@gmail.com</p>
+	</div>
+	</div>
 </script>
 
 <script type="text/javascript">
@@ -332,6 +355,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+	<p class="dplay">陈列馆</p>
 	<audio class="playmusic" controls="controls" autoplay="autoplay"> 
 		<source src="myimage/Rainyseason.mp3" type="audio/mpeg" /> Your browser does not support the audio element.
 	</audio>

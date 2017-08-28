@@ -1,4 +1,4 @@
 function presspulldown(dearjhon) {
-	$("#"+dearjhon).slideToggle("slow");
+	$("#"+dearjhon).slideToggle(1500);
 }
 
