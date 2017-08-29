@@ -11,7 +11,1343 @@
 @import
 	url('http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css')
 	;
+/*媒体查询：注意and后面空格的添加*/
+/*iphone: w < 768px*/
+@media screen and (max-width: 768px) {
+body {
+	background-color: #e7dbd9;
+}
 
+.hh{
+	display: none;
+}
+
+.head_bored {
+	margin-top: 10px;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
+
+.pulldown {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.title {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p {
+	font-family: SimHei;
+	position: relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.block_bored {
+	background-color: black;
+	margin-top: 5px;
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored {
+	width: 33.3%;
+	height: 120px;
+	background-color: black;
+	float: left;
+	padding: 10px;
+}
+
+.content_bored p {
+	font-family: SimHei;
+	color: white;
+}
+
+.content_bored a {
+	font-family: SimHei;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: SimHei;
+}
+
+button {
+	font-family: SimHei;
+}
+
+a {
+	font-family: SimHei;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}
+
+a {
+	position: relative;
+	bottom: 17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.content_bored p {
+	position: relative;
+	margin-left: 83px;
+	bottom: 22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.playmusic {
+	display: none;
+}
+
+.carousel-inner>.item>img {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner>.item {
+	height: 350px;
+}
+
+.carousel-inner .item img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+	background-color: #060505;
+	opacity: 0.5;
+	z-index: 1;
+	padding: 1px;
+}
+
+.carousel-caption h4 {
+	color: #c5bcbb;
+	font-family: SimHei;
+}
+
+.carousel-indicators li {
+	display: none;
+}
+
+.play {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 42%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.dplay {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 41%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.introduce {
+	width: 100%;
+	height: 400px;
+}
+
+.intro {
+	position: relative;
+	margin-top: -300px;
+	margin-left: 18%;
+}
+
+.intro1 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 38%;
+}
+
+.intro2 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 58%;
+}
+
+.intro3 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 78%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-indent: 20px;
+}
+
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 250px;
+	margin-left: 33%;
+}
+
+.deep {
+	width: 270px;
+	height: 300px;
+}
+
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
+}
+
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
+}
+
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+}
+
+.dddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 41%;
+}
+
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 9%;
+}
+
+.Tel {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 39%;
+	margin-top: -228px;
+}
+
+.Email {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 69%;
+	margin-top: -228px;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.qzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+.ezi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.tzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*pad: w >= 768  && w< 992*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+body {
+	padding: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	background-color: #151414;
+}
+
+.head_bored {
+	margin-top: 10px;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
+
+.pulldown {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.title {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p {
+	font-family: SimHei;
+	position: relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.block_bored {
+	background-color: black;
+	margin-top: 5px;
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored {
+	width: 33.3%;
+	height: 120px;
+	background-color: black;
+	float: left;
+	padding: 10px;
+}
+
+.content_bored p {
+	font-family: SimHei;
+	color: white;
+}
+
+.content_bored a {
+	font-family: SimHei;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: SimHei;
+}
+
+button {
+	font-family: SimHei;
+}
+
+a {
+	font-family: SimHei;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}
+
+a {
+	position: relative;
+	bottom: 17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.content_bored p {
+	position: relative;
+	margin-left: 83px;
+	bottom: 22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.playmusic {
+	display: none;
+}
+
+.carousel-inner>.item>img {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner>.item {
+	height: 350px;
+}
+
+.carousel-inner .item img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+	background-color: #060505;
+	opacity: 0.5;
+	z-index: 1;
+	padding: 1px;
+}
+
+.carousel-caption h4 {
+	color: #c5bcbb;
+	font-family: SimHei;
+}
+
+.carousel-indicators li {
+	display: none;
+}
+
+.play {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 42%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.dplay {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 41%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.introduce {
+	width: 100%;
+	height: 400px;
+}
+
+.intro {
+	position: relative;
+	margin-top: -300px;
+	margin-left: 18%;
+}
+
+.intro1 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 38%;
+}
+
+.intro2 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 58%;
+}
+
+.intro3 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 78%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-indent: 20px;
+}
+
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 250px;
+	margin-left: 33%;
+}
+
+.deep {
+	width: 270px;
+	height: 300px;
+}
+
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
+}
+
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
+}
+
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+}
+
+.dddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 41%;
+}
+
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 9%;
+}
+
+.Tel {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 39%;
+	margin-top: -228px;
+}
+
+.Email {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 69%;
+	margin-top: -228px;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.qzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+.ezi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.tzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*中等屏幕   w >= 992  && w<1200*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+body {
+	padding: 10px;
+	padding-left: 70px;
+	padding-right: 70px;
+	background-color: #151414;
+}
+
+.head_bored {
+	margin-top: 10px;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
+
+.pulldown {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.title {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p {
+	font-family: SimHei;
+	position: relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.block_bored {
+	background-color: black;
+	margin-top: 5px;
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored {
+	width: 33.3%;
+	height: 120px;
+	background-color: black;
+	float: left;
+	padding: 10px;
+}
+
+.content_bored p {
+	font-family: SimHei;
+	color: white;
+}
+
+.content_bored a {
+	font-family: SimHei;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: SimHei;
+}
+
+button {
+	font-family: SimHei;
+}
+
+a {
+	font-family: SimHei;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}
+
+a {
+	position: relative;
+	bottom: 17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.content_bored p {
+	position: relative;
+	margin-left: 83px;
+	bottom: 22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.playmusic {
+	display: none;
+}
+
+.carousel-inner>.item>img {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner>.item {
+	height: 350px;
+}
+
+.carousel-inner .item img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+	background-color: #060505;
+	opacity: 0.5;
+	z-index: 1;
+	padding: 1px;
+}
+
+.carousel-caption h4 {
+	color: #c5bcbb;
+	font-family: SimHei;
+}
+
+.carousel-indicators li {
+	display: none;
+}
+
+.play {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 42%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.dplay {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 41%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.introduce {
+	width: 100%;
+	height: 400px;
+}
+
+.intro {
+	position: relative;
+	margin-top: -300px;
+	margin-left: 18%;
+}
+
+.intro1 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 38%;
+}
+
+.intro2 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 58%;
+}
+
+.intro3 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 78%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-indent: 20px;
+}
+
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 250px;
+	margin-left: 33%;
+}
+
+.deep {
+	width: 270px;
+	height: 300px;
+}
+
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
+}
+
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
+}
+
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+}
+
+.dddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 41%;
+}
+
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 9%;
+}
+
+.Tel {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 39%;
+	margin-top: -228px;
+}
+
+.Email {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 69%;
+	margin-top: -228px;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.qzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+.ezi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.tzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+body {
+	padding: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
+	background-color: #151414;
+}
+
+.head_bored {
+	margin-top: 10px;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
+
+.pulldown {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.title {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p {
+	font-family: SimHei;
+	position: relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.block_bored {
+	background-color: black;
+	margin-top: 5px;
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored {
+	width: 33.3%;
+	height: 120px;
+	background-color: black;
+	float: left;
+	padding: 10px;
+}
+
+.content_bored p {
+	font-family: SimHei;
+	color: white;
+}
+
+.content_bored a {
+	font-family: SimHei;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: SimHei;
+}
+
+button {
+	font-family: SimHei;
+}
+
+a {
+	font-family: SimHei;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}
+
+a {
+	position: relative;
+	bottom: 17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.content_bored p {
+	position: relative;
+	margin-left: 83px;
+	bottom: 22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.playmusic {
+	display: none;
+}
+
+.carousel-inner>.item>img {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner>.item {
+	height: 350px;
+}
+
+.carousel-inner .item img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+	background-color: #060505;
+	opacity: 0.5;
+	z-index: 1;
+	padding: 1px;
+}
+
+.carousel-caption h4 {
+	color: #c5bcbb;
+	font-family: SimHei;
+}
+
+.carousel-indicators li {
+	display: none;
+}
+
+.play {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 42%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.dplay {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 41%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.introduce {
+	width: 100%;
+	height: 400px;
+}
+
+.intro {
+	position: relative;
+	margin-top: -300px;
+	margin-left: 18%;
+}
+
+.intro1 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 38%;
+}
+
+.intro2 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 58%;
+}
+
+.intro3 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 78%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-indent: 20px;
+}
+
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 250px;
+	margin-left: 33%;
+}
+
+.deep {
+	width: 270px;
+	height: 300px;
+}
+
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
+}
+
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
+}
+
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+}
+
+.dddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 41%;
+}
+
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 9%;
+}
+
+.Tel {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 39%;
+	margin-top: -228px;
+}
+
+.Email {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 69%;
+	margin-top: -228px;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.qzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+.ezi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.tzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
 body {
 	padding: 10px;
 	padding-left: 350px;
@@ -151,7 +1487,7 @@ a {
 }
 
 .play {
-	position:relative;
+	position: relative;
 	font-size: 35px;
 	color: white;
 	margin-left: 42%;
@@ -160,7 +1496,7 @@ a {
 }
 
 .dplay {
-	position:relative;
+	position: relative;
 	font-size: 35px;
 	color: white;
 	margin-left: 41%;
@@ -174,25 +1510,25 @@ a {
 }
 
 .intro {
-	position:relative;
+	position: relative;
 	margin-top: -300px;
 	margin-left: 18%;
 }
 
 .intro1 {
-	position:relative;
+	position: relative;
 	margin-top: -68px;
 	margin-left: 38%;
 }
 
 .intro2 {
-	position:relative;
+	position: relative;
 	margin-top: -68px;
 	margin-left: 58%;
 }
 
 .intro3 {
-	position:relative;
+	position: relative;
 	margin-top: -68px;
 	margin-left: 78%;
 }
@@ -206,126 +1542,461 @@ a {
 	border-radius: 50px;
 }
 
-.font-intro{
-	width:180px;
-	height:90px;
-	margin-top:40px;
-	margin-left:-55px;
-}
-
-.zi{
-	font-size:18px;
-	line-height:25px;
-	color:white;
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
 	font-weight: bold;
 	letter-spacing: 5px;
-	text-indent:20px;
+	text-indent: 20px;
 }
 
-.ddplay{
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
 	font-size: 35px;
 	color: white;
 	font-weight: bold;
-	position:relative;
-	margin-top:250px;
+	position: relative;
+	margin-top: 250px;
 	margin-left: 33%;
 }
 
-.deep{
-	width:270px;
-	height:300px;
+.deep {
+	width: 270px;
+	height: 300px;
 }
 
-.blockk{
-	position:relative;
-	width:270px;
-	height:320px;
-	margin-top:50px;
-	margin-left:2%;
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
 }
 
-.blockk1{
-	position:relative;
-	width:270px;
-	height:320px;
-	margin-top:-320px;
-	margin-left:62%;
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
 }
 
-.ablock{
-	width:270px;
-	height:320px;
-	margin-top:50px;
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
 }
 
-.dddplay{
+.dddplay {
 	font-size: 35px;
 	color: white;
 	font-weight: bold;
-	position:relative;
-	margin-top:90px;
+	position: relative;
+	margin-top: 90px;
 	margin-left: 41%;
 }
 
-.QQ{
-	position:relative;
-	width:200px;
-	height:200px;
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
 	margin-left: 9%;
 }
-.Tel{
+
+.Tel {
 	position: relative;
-	width:200px;
-	height:200px;
+	width: 200px;
+	height: 200px;
 	margin-left: 39%;
-	margin-top:-228px;
+	margin-top: -228px;
 }
-.Email{
+
+.Email {
 	position: relative;
-	width:200px;
-	height:200px;
+	width: 200px;
+	height: 200px;
 	margin-left: 69%;
-	margin-top:-228px;
+	margin-top: -228px;
 }
 
-.c1{
-	margin:0 auto;
+.c1 {
+	margin: 0 auto;
 	margin-top: 30px;
 }
 
-.c2{
-	margin:0 auto;
+.c2 {
+	margin: 0 auto;
 	margin-top: 30px;
 }
 
-.c3{
-	margin:0 auto;
+.c3 {
+	margin: 0 auto;
 	margin-top: 30px;
 }
 
-.qzi{
-	position:relative;
-	color:white;
+.qzi {
+	position: relative;
+	color: white;
 	font-weight: bold;
 	font-size: 25px;
-	margin-top:30px;
-	margin-left:12%;
+	margin-top: 30px;
+	margin-left: 12%;
 }
 
-.ezi{
-	position:relative;
-	color:white;
+.ezi {
+	position: relative;
+	color: white;
 	font-weight: bold;
 	font-size: 25px;
-	margin-top:30px;
-
+	margin-top: 30px;
 }
 
-.tzi{
-	position:relative;
-	color:white;
+.tzi {
+	position: relative;
+	color: white;
 	font-weight: bold;
 	font-size: 25px;
-	margin-top:30px;
-	margin-left:12%;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2500px) and (min-width: 1920px) {
+body {
+	padding: 10px;
+	padding-left: 350px;
+	padding-right: 350px;
+	background-color: #151414;
+}
+
+.head_bored {
+	margin-top: 10px;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
+
+.pulldown {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.title {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+.title p {
+	font-family: SimHei;
+	position: relative;
+	margin-left: 90px;
+	bottom: 23px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.block_bored {
+	background-color: black;
+	margin-top: 5px;
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+
+.content_bored {
+	width: 33.3%;
+	height: 120px;
+	background-color: black;
+	float: left;
+	padding: 10px;
+}
+
+.content_bored p {
+	font-family: SimHei;
+	color: white;
+}
+
+.content_bored a {
+	font-family: SimHei;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: SimHei;
+}
+
+button {
+	font-family: SimHei;
+}
+
+a {
+	font-family: SimHei;
+}
+
+img {
+	width: 60px;
+	height: 60px;
+}
+
+a {
+	position: relative;
+	bottom: 17px;
+	margin-left: 22px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.content_bored p {
+	position: relative;
+	margin-left: 83px;
+	bottom: 22px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.playmusic {
+	display: none;
+}
+
+.carousel-inner>.item>img {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner>.item {
+	height: 350px;
+}
+
+.carousel-inner .item img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+	background-color: #060505;
+	opacity: 0.5;
+	z-index: 1;
+	padding: 1px;
+}
+
+.carousel-caption h4 {
+	color: #c5bcbb;
+	font-family: SimHei;
+}
+
+.carousel-indicators li {
+	display: none;
+}
+
+.play {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 42%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.dplay {
+	position: relative;
+	font-size: 35px;
+	color: white;
+	margin-left: 41%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.introduce {
+	width: 100%;
+	height: 400px;
+}
+
+.intro {
+	position: relative;
+	margin-top: -300px;
+	margin-left: 18%;
+}
+
+.intro1 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 38%;
+}
+
+.intro2 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 58%;
+}
+
+.intro3 {
+	position: relative;
+	margin-top: -68px;
+	margin-left: 78%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.zi {
+	font-size: 10px;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-indent: 20px;
+}
+
+.font-intro {
+	width: 180px;
+	height: 90px;
+	margin-top: 40px;
+	margin-left: -55px;
+}
+
+.ddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 250px;
+	margin-left: 33%;
+}
+
+.deep {
+	width: 270px;
+	height: 300px;
+}
+
+.blockk {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+	margin-left: 2%;
+}
+
+.blockk1 {
+	position: relative;
+	width: 270px;
+	height: 320px;
+	margin-top: -320px;
+	margin-left: 62%;
+}
+
+.ablock {
+	width: 270px;
+	height: 320px;
+	margin-top: 50px;
+}
+
+.dddplay {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 41%;
+}
+
+.QQ {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 9%;
+}
+
+.Tel {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 39%;
+	margin-top: -228px;
+}
+
+.Email {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-left: 69%;
+	margin-top: -228px;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.qzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
+
+.ezi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.tzi {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 12%;
+}
 }

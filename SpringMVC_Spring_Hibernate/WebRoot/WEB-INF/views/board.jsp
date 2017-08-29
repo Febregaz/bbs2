@@ -21,12 +21,16 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 <meta name="baidu-site-verification" content="ebAx8gG0A0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 <link rel="stylesheet"
 	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link
+	href="${pageContext.request.contextPath}/css/bootstrap-responsive.css"
+	rel="stylesheet">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/carousel.css">
 <link href="${pageContext.request.contextPath}/css/bored.css"
@@ -48,6 +52,8 @@
 	href="${pageContext.request.contextPath}/css/main.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/sinaFaceAndEffec.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 
 <script type="text/javascript">
@@ -76,7 +82,7 @@
 
 <script type="text/javascript">
 	Handlebars.registerHelper("ma", function(v1) {
-		var a=encodeURI(encodeURI(v1));
+		var a = encodeURI(encodeURI(v1));
 		return a;
 	});
 </script>
@@ -202,28 +208,34 @@
 </script>
 
 <script type="text/javascript">
-	$(document).ready(function() {
-		var topic_d = topic_getall();
-		var board_d = board_getall();
-		var user_d = user_getall();
-		var master = {
-			board : board_d,
-			topic : topic_d,
-			user : user_d
-		};
-		var template = $("#commentTmpl").template(master).appendTo("body");
-		//var template = $("#commentTmpl").template(topic_d).appendTo(".block_bored");
-		
-		$(".haodongxi").click(function(){
-			alert("好东西正在完善中...");
-			window.open ('http://sites.simbla.com/8f9cec59-5aef-95ab-01dd-3282b6d062da/Home');
-		});
-		
-		$(".regist").click(function(){
-			alert("注册暂停...");
-		});
+	$(document)
+			.ready(
+					function() {
+						var topic_d = topic_getall();
+						var board_d = board_getall();
+						var user_d = user_getall();
+						var master = {
+							board : board_d,
+							topic : topic_d,
+							user : user_d
+						};
+						var template = $("#commentTmpl").template(master)
+								.appendTo("body");
+						//var template = $("#commentTmpl").template(topic_d).appendTo(".block_bored");
 
-	});
+						$(".haodongxi")
+								.click(
+										function() {
+											alert("好东西正在完善中...");
+											window
+													.open('http://sites.simbla.com/8f9cec59-5aef-95ab-01dd-3282b6d062da/Home');
+										});
+
+						$(".regist").click(function() {
+							alert("注册暂停...");
+						});
+
+					});
 	function board_getall() {
 		var result;
 		$.ajax({
@@ -286,12 +298,20 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
 			<a class="navbar-brand" href="#">617博物馆</a>
 		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
 		<div>
-			<form class="navbar-form navbar-left" role="search" action="vnpost/sou" method="post">
+			<form class="navbar-form navbar-left" role="search"
+				action="vnpost/sou" method="post">
 				<div class="form-group">
-					<input type="text" name="sousuo" class="form-control" placeholder="Search">
+					<input type="text" name="sousuo" class="form-control"
+						placeholder="Search">
 				</div>
 				<button type="submit" class="btn btn-default">搜索</button>
 			</form>
@@ -299,23 +319,26 @@
 				好东西</button>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
+		
 			<c:choose>
 				<c:when test="${sessionScope.user_name!=null}">
-					<li><a class="llii"
+					<li class="hh"><a class="llii"
 						href="personal/personal.jsp?user_id=${sessionScope.user_name.user_id}"><span
 							class="glyphicon glyphicon-home"></span>${sessionScope.user_name.user_name}</a></li>
-					<li><a class="llii" href="user/logout"><span
+					<li class="hh"><a class="llii" href="user/logout"><span
 							class="glyphicon glyphicon-log-out"></span> 登出</a></li>
 				</c:when>
 				<c:otherwise>
-					<li><a class="llii regist" href="#"><span
+					<li class="hh"><a class="llii regist" href="#"><span
 							class="glyphicon glyphicon-user"></span> 注册</a></li>
-					<li><a class="llii"
+					<li class="hh"><a class="llii"
 						href="${pageContext.request.contextPath}/login.jsp"><span
 							class="glyphicon glyphicon-log-in"></span> 登录</a></li>
 				</c:otherwise>
 			</c:choose>
+		
 		</ul>
+	</div>
 	</div>
 	</nav>
 
@@ -355,9 +378,10 @@
 		</a>
 	</div>
 	<p class="play">陈列馆</p>
-	<audio class="playmusic" controls="controls" autoplay="autoplay"> 
-		<source src="myimage/Rainyseason.mp3" type="audio/mpeg" /> Your browser does not support the audio element.
-	</audio>
+	<audio class="playmusic" controls="controls" autoplay="autoplay">
+	<source src="myimage/Rainyseason.mp3" type="audio/mpeg" /> Your
+	browser does not support the audio element. </audio>
 
 </body>
+
 </html>
